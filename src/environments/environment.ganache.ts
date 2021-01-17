@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
-  ethUrl: 'ws://localhost:8545'
+  production: false,
+  ethUrl: 'ws://localhost:7545'
 };

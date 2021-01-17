@@ -29,6 +29,14 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "ganache": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.ganache.ts"
+                }
+              ]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -56,11 +64,14 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/dev-server:generic",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "angular-box:build"
           },
           "configurations": {
+            "ganache": {
+              "browserTarget": "angular-box:build:ganache"
+            },
             "production": {
               "browserTarget": "angular-box:build:production"
             }

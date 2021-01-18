@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Web3Module } from './web3/web3.module';
-import { Web3Service } from './web3/web3.service';
+
 
 @NgModule({
   declarations: [
@@ -12,10 +12,10 @@ import { Web3Service } from './web3/web3.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    Web3Module
   ],
-  providers: [ Web3Service ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 export const environment = {
-  production: true,
-  infuraNetwork: "homestead",
+  production: false,
+  infuraNetwork: "ropsten",
   infuraToken: "<token>",
   ethUrl: ""
 };
